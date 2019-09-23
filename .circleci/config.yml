@@ -18,3 +18,7 @@ jobs:
       - run:
           name: Print Environment Variables
           command: env
+
+      - run:
+          name: My Environment is $CIRCLE_PROJECT_REPONAME
+          command: ls -la /tmp
