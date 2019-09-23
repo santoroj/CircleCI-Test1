@@ -20,5 +20,6 @@ jobs:
           command: env
 
       - run:
-          name: My Environment is $CIRCLE_PROJECT_REPONAME
-          command: ls -la /tmp
+          name: My Environment 
+          command: |
+             echo "Environment : $CIRCLE_PROJECT_REPONAME"
